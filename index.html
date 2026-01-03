@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Huellitas de Amor | Refugio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">🐾</div>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#adoptar">Adoptar</a>
+        <a href="#donar">Donar</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section id="inicio" class="inicio">
+    <h1>Huellitas de Amor</h1>
+    <p class="intro">
+        Rescatamos animales y los ayudamos a encontrar un hogar lleno de amor.
+    </p>
+</section>
+
+<section id="adoptar" class="adoptar">
+    <div class="filtros">
+    <button type="button" class="btn-filtros">Filtrar</button>
+
+    <div class="panel-filtros">
+        <div class="grupo-filtro">
+            <span>Especie</span>
+            <button data-filtro="perro">🐶 Perro</button>
+            <button data-filtro="gato">🐱 Gato</button>
+        </div>
+
+        <div class="grupo-filtro">
+            <span>Edad</span>
+            <button data-filtro="cachorro">Cachorro</button>
+            <button data-filtro="adulto">Adulto</button>
+            <button data-filtro="senior">Senior</button>
+        </div>
+
+        <div class="grupo-filtro">
+            <span>Tamaño</span>
+            <button data-filtro="chico">Chico</button>
+            <button data-filtro="mediano">Mediano</button>
+            <button data-filtro="grande">Grande</button>
+        </div>
+    </div>
+</div>
+
+    <h2>En adopción</h2>
+
+    <div class="mascotas-grid">
+        <button type="button" class="mascota-card" data-id="luna"<button type="button" class="mascota-card"
+        data-id="luna"
+        data-especie="perro"
+        data-edad="adulto"
+        data-tamano="mediano">
+>
+            <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16">
+      
+            <h3>Luna</h3>
+        </button>
+
+        <button type="button" class="mascota-card" data-id="rocky" <button class="mascota-card"
+<button type="button" class="mascota-card"
+        data-id="rocky"
+        data-especie="perro"
+        data-edad="adulto"
+        data-tamano="grande">
+
+>
+            <img src="https://images.unsplash.com/photo-1601758173925-4c8f6b5b8d1a">
+            <h3>Rocky</h3>
+        </button>
+
+        <button type="button" class="mascota-card" data-id="milo"<button type="button" class="mascota-card"
+        data-id="milo"
+        data-especie="gato"
+        data-edad="cachorro"
+        data-tamano="mediano">
+>
+            <img src="https://images.unsplash.com/photo-1595433562696-19b5f35c68de">
+            <h3>Milo</h3>
+        </button>
+
+        <button type="button" class="mascota-card" data-id="nala"<button type="button" class="mascota-card"
+        data-id="nala"
+        data-especie="gato"
+        data-edad="senior"
+        data-tamano="chico">
+>
+            <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131">
+            <h3>Nala</h3>
+        </button>
+
+        <button type="button" class="mascota-card" data-id="toby"<button type="button" class="mascota-card"
+        data-id="toby"
+        data-especie="perro"
+        data-edad="adulto"
+        data-tamano="mediano">
+>
+            <img src="https://images.unsplash.com/photo-1583511655936-1c8a6f36b4e8">
+            <h3>Toby</h3>
+        </button>
+    </div>
+</section>
+
+<!-- OVERLAY -->
+<div id="overlay" class="overlay">
+    <div class="overlay-contenido">
+        <button class="cerrar" type="button">✕</button>
+
+        <img id="overlay-img">
+        <h2 id="overlay-nombre"></h2>
+        <p id="overlay-desc"></p>
+
+        <a id="overlay-wpp" class="whatsapp" target="_blank">
+            Contactar por WhatsApp
+        </a>
+    </div>
+</div>
+
+<section id="donar" class="donar">
+<section id="donar" class="donar">
+    <h2>Donar salva vidas</h2>
+
+    <div class="donar-card">
+        <p>
+            Cada aporte, por pequeño que sea, nos ayuda a cubrir alimentos,
+            atención veterinaria y rescates urgentes.
+        </p>
+
+        <a href="https://wa.me/59899123456?text=Hola!%20Quiero%20hacer%20una%20donación"
+           class="btn-donar"
+           target="_blank">
+            Quiero ayudar 🐾
+        </a>
+    </div>
+
+    <h3 class="donadores-titulo">Donadores fieles</h3>
+
+    <div class="donadores-grid">
+        <div class="donador">
+            <span>🐶</span>
+            <strong>María G.</strong>
+            <small>Apadrina desde 2023</small>
+        </div>
+
+        <div class="donador">
+            <span>🐾</span>
+            <strong>Carlos R.</strong>
+            <small>Donador mensual</small>
+        </div>
+
+        <div class="donador">
+            <span>🐕</span>
+            <strong>Lucía P.</strong>
+            <small>Ayuda en emergencias</small>
+        </div>
+    </div>
+</section>
+
+</section>
+
+<section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+</section>
+
+<footer>
+    © Refugio Huellitas de Amor
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
