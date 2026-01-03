@@ -4,31 +4,31 @@ document.addEventListener("DOMContentLoaded", () => {
         luna: {
             nombre: "Luna 🐶",
             desc: "Tranquila, cariñosa y muy compañera. Ideal para familia.",
-            img: "https://images.unsplash.com/photo-1558788353-f76d92427f16",
+            img: " <img src="images/descarga (2).jpg",
             wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Luna"
         },
-        rocky: {
-            nombre: "Rocky 🐕",
-            desc: "Activo, juguetón y protector.",
-            img: "https://images.unsplash.com/photo-1601758173925-4c8f6b5b8d1a",
+        nala: {
+            nombre: "Nala ",
+            desc: "coso.",
+            img: "   <img src="images/descarga (1).jpg">",
             wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Rocky"
         },
         milo: {
             nombre: "Milo 🐱",
             desc: "Dulce y curioso, ideal para departamento.",
-            img: "https://images.unsplash.com/photo-1595433562696-19b5f35c68de",
+            img: " <img src="<images/descarga (3).jpg">",
             wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Milo"
         },
-        nala: {
-            nombre: "Nala 🐱",
-            desc: "Independiente pero muy amorosa.",
-            img: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131",
+        tigre: {
+            nombre: "tigre 🐱",
+            desc: "Independiente pero muy amoroso.",
+            img:   <img src="<images/descarga (5).jpg">,
             wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Nala"
         },
         toby: {
             nombre: "Toby 🐶",
             desc: "Sociable, alegre y se lleva bien con otros animales.",
-            img: "https://images.unsplash.com/photo-1583511655936-1c8a6f36b4e8",
+            img:   <img src= "images/perro/descarga (1).jpg",
             wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Toby"
         }
     };
