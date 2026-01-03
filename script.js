@@ -1,35 +1,53 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const mascotas = {
-        luna: {
-            nombre: "Luna 🐶",
-            desc: "Tranquila, cariñosa y muy compañera. Ideal para familia.",
-            img: " <img src="images/descarga (2).jpg",
-            wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Luna"
+        bruno: {
+            nombre: "Bruno 🐶",
+            desc: "Perro adulto grande, tranquilo y protector.",
+            img: "images/perro/descarga (1).jpg",
+            wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Bruno"
         },
-        nala: {
-            nombre: "Nala ",
-            desc: "coso.",
-            img: "   <img src="images/descarga (1).jpg">",
+        rocky: {
+            nombre: "Rocky 🐶",
+            desc: "Cachorro chico, juguetón y muy cariñoso.",
+            img: "images/perro/descarga (2).jpg",
             wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Rocky"
         },
-        milo: {
-            nombre: "Milo 🐱",
-            desc: "Dulce y curioso, ideal para departamento.",
-            img: " <img src="<images/descarga (3).jpg">",
-            wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Milo"
-        },
-        tigre: {
-            nombre: "tigre 🐱",
-            desc: "Independiente pero muy amoroso.",
-            img:   <img src="<images/descarga (5).jpg">,
-            wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Nala"
+        max: {
+            nombre: "Max 🐶",
+            desc: "Cachorro mediano, activo y curioso.",
+            img: "images/perro/descarga (3).jpg",
+            wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Max"
         },
         toby: {
             nombre: "Toby 🐶",
-            desc: "Sociable, alegre y se lleva bien con otros animales.",
-            img:   <img src= "images/perro/descarga (1).jpg",
+            desc: "Adulto mediano, sociable y fiel.",
+            img: "images/perro/images.jpg",
             wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Toby"
+        },
+        thor: {
+            nombre: "Thor 🐶",
+            desc: "Adulto grande, fuerte y muy noble.",
+            img: "images/perro/descarga.jpg",
+            wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Thor"
+        },
+        milo: {
+            nombre: "Milo 🐱",
+            desc: "Gato senior grande, tranquilo y muy mimoso.",
+            img: "images/images.jpg",
+            wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Milo"
+        },
+        luna: {
+            nombre: "Luna 🐱",
+            desc: "Gata adulta grande, dulce y compañera.",
+            img: "images/descarga (6).jpg",
+            wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Luna"
+        },
+        nala: {
+            nombre: "Nala 🐱",
+            desc: "Gata adulta grande, curiosa y amorosa.",
+            img: "images/descarga (4).jpg",
+            wpp: "https://wa.me/59899123456?text=Hola!%20Quiero%20adoptar%20a%20Nala"
         }
     };
 
@@ -42,30 +60,33 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".mascota-card").forEach(card => {
         card.addEventListener("click", () => {
             const m = mascotas[card.dataset.id];
+            if (!m) return;
 
             img.src = m.img;
             nombre.textContent = m.nombre;
             desc.textContent = m.desc;
             wpp.href = m.wpp;
 
-overlay.classList.add("activo");
-document.body.classList.add("overlay-abierto");
-
+            overlay.classList.add("activo");
+            document.body.classList.add("overlay-abierto");
         });
     });
 
     document.querySelector(".cerrar").addEventListener("click", () => {
-     overlay.classList.remove("activo");
-document.body.classList.remove("overlay-abierto");
+        overlay.classList.remove("activo");
+        document.body.classList.remove("overlay-abierto");
+    });
 
+    overlay.addEventListener("click", e => {
+        if (e.target === overlay) {
+            overlay.classList.remove("activo");
+            document.body.classList.remove("overlay-abierto");
+        }
     });
 
 });
-overlay.addEventListener("click", e => {
-    if (e.target === overlay) {
-        overlay.classList.remove("activo");
-        document.body.classList.remove("overlay-abierto");
-    }
+
+  
 });
 const btnFiltros = document.querySelector(".btn-filtros");
 const panelFiltros = document.querySelector(".panel-filtros");
@@ -107,4 +128,4 @@ function filtrarMascotas() {
             ? "block"
             : "none";
     });
-}
+
